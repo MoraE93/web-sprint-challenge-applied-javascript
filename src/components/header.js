@@ -11,6 +11,11 @@ const Header = (title, date, temp) => {
   //    <span class="temp">{ temp }</span>
   //  </div>
   //
+  <div class="header">
+  <span class="date">{ 03/20/2021 }</span>
+  <h1>{ lamda Times }</h1>
+  <span class="temp">{ 35 }</span>
+</div>
 }
 
 const headerAppender = (selector) => {
@@ -20,6 +25,7 @@ const headerAppender = (selector) => {
   // It should create a header using the Header component above, passing arguments of your choosing.
   // It should append the header to the element in the DOM that matches the given selector.
   //
+  Headers.appendchild(Header)
 }
 
 export { Header, headerAppender }
